@@ -5,18 +5,18 @@
 }
 
 @font-face {
-  src: url(../fonts/OpenSans-Regular.ttf) format("ttf"), 
-  url(../fonts/OpenSans-Regular.woff) format("woff"), 
-  url(../fonts/OpenSans-Regular.woff2) format("woff2");
+  src: url(../fonts/OpenSans-Regular.ttf) format("ttf"),
+    url(../fonts/OpenSans-Regular.woff) format("woff"),
+    url(../fonts/OpenSans-Regular.woff2) format("woff2");
   font-family: regular;
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  src: url(../fonts/OpenSans-Bold.ttf) format("ttf"), 
-  url(../fonts/OpenSans-Bold.woff) format("woff"), 
-  url(../fonts/OpenSans-Bold.woff2) format("woff2");
+  src: url(../fonts/OpenSans-Bold.ttf) format("ttf"),
+    url(../fonts/OpenSans-Bold.woff) format("woff"),
+    url(../fonts/OpenSans-Bold.woff2) format("woff2");
   font-family: bold;
   font-weight: 700;
   font-style: normal;
@@ -82,7 +82,8 @@ li {
   cursor: pointer;
 }
 
-.menu__button:before, .menu__button:after {
+.menu__button:before,
+.menu__button:after {
   content: "";
   width: 100%;
   height: 20%;
@@ -112,9 +113,9 @@ li {
 }
 
 @media (min-width: 1200px) {
- .menu__button {
+  .menu__button {
     display: none;
- }
+  }
 }
 
 .menu {
@@ -151,7 +152,6 @@ li {
   text-transform: uppercase;
   font-family: bold;
   line-height: 1.7;
-
 }
 
 .container {
@@ -164,7 +164,6 @@ li {
   padding-right: 15px;
   justify-content: space-between;
 }
-
 
 /*Сейчас в тренде*/
 
@@ -202,16 +201,16 @@ li {
 }
 
 .trand::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.6;
-    background-color: #000000;
-    z-index: -1;
-  }
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  background-color: #000000;
+  z-index: -1;
+}
 
 .trand-info {
   border: #b59f5b 3px solid;
@@ -301,7 +300,7 @@ li {
   margin-bottom: 5px;
 }
 
-.news-category:nth-child(n+2) {
+.news-category:nth-child(n + 2) {
   margin-left: 20px;
 }
 
@@ -355,6 +354,24 @@ li {
 
 .sidebar-header {
   font-size: 14px;
+  color: 0f0d0e;
+  font-family: bold;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 23px;
+}
+
+.sidebar-header::after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 3px;
+  background-color: #e1d9bd;
+  margin: 10px auto 0 auto;
+}
+
+.sidebar-header {
   color: 0f0d0e;
   font-family: bold;
   text-transform: uppercase;
@@ -490,6 +507,24 @@ li {
   border: #b9b29b solid 1px;
 }
 
+.subscribe-button {
+  margin-top: 30px;
+}
+
+.subscribe-button {
+  background-color: #b59f5b;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 60px;
+  border: none;
+  box-sizing: border-box;
+
+  color: #ffffff;
+  font-size: 14px;
+  font-family: bold;
+  text-transform: uppercase;
+}
+
 .tags {
   padding-left: 3px;
   margin-bottom: 50px;
@@ -568,9 +603,14 @@ a {
   display: flex;
 }
 
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
 .product_second {
- margin-left: 110px;
- margin-right: 110px;
+  margin-left: 110px;
+  margin-right: 110px;
 }
 
 .product-img {
@@ -578,9 +618,9 @@ a {
 }
 
 .product_title {
- text-transform: uppercase;
- font-size: 20px;
- font-family: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: bold;
 }
 
 .product-body {
@@ -589,8 +629,8 @@ a {
   outline-offset: 20px;
   width: 300px;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
-
 
 .product_description {
   font-size: 15px;
@@ -733,7 +773,6 @@ a {
 /*Планшет*/
 
 @media (max-width: 1199px) and (min-width: 641px) {
-  
   .header-container {
     padding-top: 30px;
     max-width: 700px;
@@ -743,25 +782,24 @@ a {
   .header {
     background-image: url("../img/banner-bg-tablet.jpg");
   }
-  
+
   .header-logo {
     width: 160px;
   }
-  
+
   .menu-list {
-   display: none;
+    display: none;
   }
 
-  
   .title {
     width: 600px;
     font-size: 40px;
     font-family: bold;
     line-height: 1.7;
   }
-  
+
   /*Сейчас в тренде*/
-  
+
   .section-title {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -779,10 +817,10 @@ a {
     font-size: 17px;
     margin-top: 10px;
   }
-  
+
   /*Основная часть*/
 
- .container {
+  .container {
     margin: 50px auto;
     max-width: 700px;
   }
@@ -793,7 +831,7 @@ a {
   .news-info {
     padding-bottom: 20px;
   }
-  
+
   .news-image {
     width: 390px;
     margin-right: 0;
@@ -811,38 +849,38 @@ a {
   .news:nth-last-child(1) {
     border-bottom: none;
   }
-  
+
   .news:nth-child(n + 2) {
     margin-top: 40px;
   }
-  
+
   .news_headline {
     font-size: 17px;
     line-height: 1.2;
     margin-top: 15px;
     margin-bottom: 35px;
   }
-  
+
   .news-title {
     font-size: 17px;
   }
-  
+
   .author {
     margin-left: 15px;
   }
-  
+
   .news-text {
     margin-top: 35px;
   }
-  
+
   /*Магазин*/
-  
+
   .shop_section {
     width: 100%;
     padding-left: 55px;
     padding-right: 55px;
   }
-  
+
   .products {
     flex-wrap: wrap;
   }
@@ -858,23 +896,23 @@ a {
   .product_third {
     margin-top: 55px;
   }
-  
+
   .product_title {
-   font-size: 17px;
+    font-size: 17px;
   }
-  
+
   /*Подвал*/
-  
+
   .footer {
     max-width: 100%;
     padding-left: 35px;
     padding-right: 35px;
   }
-  
+
   .copyright {
     margin-top: 50px;
   }
-} 
+}
 
 @media (max-width: 1199px) and (min-width: 641px) and (orientation: portrait) {
   .trand {
@@ -900,13 +938,9 @@ a {
   }
 }
 
-
-
-
 /*tel*/
 
 @media (max-width: 640px) {
-  
   .header-container {
     display: flex;
     flex-direction: column-reverse;
@@ -917,25 +951,25 @@ a {
   .header {
     background-image: url("../img/banner-mobile.jpg");
   }
-  
+
   .header-logo {
     width: 270px;
     justify-content: center;
     align-self: center;
     margin-bottom: 45px;
   }
-  
+
   .menu {
     padding-right: 15px;
   }
 
-.menu__button {
-  justify-content: flex-end;
-  padding: 30px 15px 0 0;
-}
+  .menu__button {
+    justify-content: flex-end;
+    padding: 30px 15px 0 0;
+  }
 
   .menu-list {
-   display: none;
+    display: none;
   }
 
   .title {
@@ -944,9 +978,9 @@ a {
     font-family: bold;
     line-height: 1.7;
   }
-  
+
   /*Сейчас в тренде*/
-  
+
   .section-title {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -968,10 +1002,10 @@ a {
     font-size: 17px;
     margin-top: 10px;
   }
-  
+
   /*Основная часть*/
 
- .container {
+  .container {
     margin: 50px auto;
     flex-wrap: wrap;
   }
@@ -982,7 +1016,7 @@ a {
   .news-info {
     padding-bottom: 20px;
   }
-  
+
   .news-image {
     width: 100%;
     margin-right: 0;
@@ -1000,30 +1034,30 @@ a {
   .news:nth-last-child(1) {
     border-bottom: none;
   }
-  
+
   .news:nth-child(n + 2) {
     margin-top: 40px;
   }
-  
+
   .news_headline {
     font-size: 17px;
     line-height: 1.2;
     margin-top: 15px;
     margin-bottom: 35px;
   }
-  
+
   .news-title {
     font-size: 17px;
   }
-  
+
   .author {
     margin-left: 15px;
   }
-  
+
   .news-text {
     margin-top: 35px;
   }
-  
+
   .sidebar {
     width: 100%;
   }
@@ -1036,47 +1070,42 @@ a {
     width: 100%;
   }
 
-   
-  
   /*Магазин*/
-  
+
   .shop_section {
     width: 100%;
     padding-left: 35px;
     padding-right: 35px;
   }
-  
+
   .products {
     flex-direction: column;
     padding: 0 20px 25px 20px;
-
   }
 
   .product {
     width: 100%;
   }
-  
+
   .product_title {
-   font-size: 17px;
+    font-size: 17px;
   }
-  
+
   .product_second {
     margin: 45px auto 45px auto;
   }
   /*Подвал*/
-  
+
   .footer {
     max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
   }
-  
+
   .copyright {
     margin-top: 50px;
   }
 }
-
-
 
 /*popup*/
 
@@ -1088,21 +1117,22 @@ a {
     flex-wrap: wrap;
     justify-items: center;
     position: fixed;
-    height: 600px;	
-    background: #fff; 
+    height: 600px;
+    background: #fff;
     z-index: 99999;
     opacity: 1;
     top: 55px;
     left: 15px;
+    right: 15px;
   }
-  
+
   .popup-fade:before {
-    content: '';
+    content: "";
     background: #000;
-    position: fixed; 
+    position: fixed;
     left: 0;
     top: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     opacity: 0.7;
     z-index: 9999;
@@ -1113,11 +1143,14 @@ a {
     border: none;
     padding: 0;
     text-indent: -9999px;
-    cursor: pointer; 
-    width: 30px; 
+    cursor: pointer;
+    width: 30px;
     height: 30px;
+    top: -35px;
+    left: 300px;
+    position: absolute;
   }
-  
+
   .popup__close:before, .popup__close:after {
     content: "";
     background-color: #ffffff;
@@ -1126,11 +1159,11 @@ a {
     top: 50%;
     left: 50%;
   }
-  
+
   .popup__close:before {
     transform: translate(-50%, -50%) rotate(45deg);
   }
-  
+
   .popup__close:after {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
@@ -1138,142 +1171,122 @@ a {
   .popup_container {
     padding: 30px 25px;
   }
-  
+
   .form-hint {
     padding-bottom: 10px;
   }
-  
+
+  .select_lable {
+    position: relative;
+  }
+
   .select {
     -webkit-appearance: none;
     -moz-appearance: none;
-    
-    background-image: url(../svg/select-arrows-svgrepo-com.svg);
-    background-repeat: no-repeat;
-    background-position: right 5px center;
-    fill:#b59f5b;
   }
-  
+
   select {
     width: 100%;
     height: 50px;
     padding: 15px;
   }
-  
+
   select:focus {
-    border: solid #e9e5d4 1px;
-  }
-  
-  select:focus-visible {
-    outline: none;
+    outline-color: #e9e5d4;
   }
 
   svg {
     fill: #b59f5b;
+    position: absolute;
+    top: 45px;
+    right: 5px;
   }
-  
+
   .form-row {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
   }
-  
+
   .feedback_input {
     margin-top: 10px;
     background-color: #f4f7f6;
     border: none;
   }
-    
-  
-  .radio {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    width: 1px;
+
+  /* Рисуем внешний круг радиокнопки*/
+  .custom-radio {
+    position: relative; 
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #b59f5b;
+    border-radius: 50%;
+    vertical-align: text-top;
+    margin-right: 5px; /* Отступ между кнопкой и меткой*/
   }
-  
+
+  /* внутренний круг */
+  .custom-radio::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+
+    /* Выравниваем по центру относительно внешнего круга */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
   .form_second {
     display: block;
     margin-top: 10px;
   }
-  
-  .radio_text::before {
-   content: "";
-   width: 20px;
-   height: 20px;
-   background-color: white;
-   border: 1px solid #b59f5b;
-   border-radius: 50%;
-   padding: 2px;
+
+  .old-radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
   }
   
-  .radio:checked~.radio_text::before {
-    background-color: #b59f5b; 
+  .old-radio:checked + .custom-radio::before {
+    background-color: #b59f5b;
   }
-  
-  .radio_text {
-    margin-right: 30px;
+
+  .custom-radio-second {
+    margin-left: 30px;
   }
-  
+
   .sidebar-header {
     font-size: 16px;
     margin-bottom: 30px;
   }
-  
+
   .textarea {
-   height: 130px;
-   width: 100%;
+    height: 130px;
+    width: 100%;
   }
-  
+
   .textarea:focus {
-    border: solid #e9e5d4 1px;
-  }
-  
-  .textarea:focus-visible {
-    outline: none;
+    outline-color: #e9e5d4;
   }
 
   textarea::placeholder {
     padding: 20px;
   }
-  
+
   .popup_text {
     color: #000000;
     font-size: 13px;
     font-family: regular;
   }
-  
+
   .subscribe-button {
     margin-top: 30px;
   }
-  
-  .subscribe-button {
-    background-color: #b59f5b;
-    width: 100%;
-    height: 50px;
-    margin-bottom: 60px;
-    border: none;
-    box-sizing: border-box;
-  
-    color: #ffffff;
-    font-size: 14px;
-    font-family: bold;
-    text-transform: uppercase;
-  }
-  
-  .sidebar-header {
-  
-    color: 0f0d0e;
-    font-family: bold;
-    text-transform: uppercase;
-    text-align: center;
-  
-    margin-bottom: 23px;
-  }
-  
-  .sidebar-header::after {
-    content: "";
-    display: block;
-    width: 66px;
-    height: 3px;
-    background-color: #e1d9bd;
-    margin: 10px auto 0 auto;
-  }
-  }
+}

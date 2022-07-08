@@ -457,20 +457,20 @@
 /*POPUP*\
 
 <div class="popup-fade">
-  <div class="popup">
-    <button class="popup__close" type="button">Закрыть окно</button>
+    <div class="popup">
+      <button class="popup__close" type="button">Закрыть окно</button>
       <div class="popup_container">
         <div class="feedback">
           <header class="feedback_header">
             <h3 class="sidebar-header">Ваш фидбек</h3>
           </header>
-  
+
           <div class="feedback_content">
-  
+
             <form class="feedback_form">
-  
+
               <div class="form_first form-row">
-                <label>
+                <label class="select_lable">
                   <span class="form-hint">Часто вы заходите на сайт?</span>
                   <select type="select" class="feedback_input select">
                     <option selected>Почти каждый день</option>
@@ -478,29 +478,32 @@
                     <option>Раз в несколько недель</option>
                     <option>Несколько раз в год</option>
                   </select>
-                  <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 1L5 8h10l-5-7zm0 18l5-7H5l5 7z"/></svg>
-                </label >
+                  <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 1L5 8h10l-5-7zm0 18l5-7H5l5 7z" />
+                  </svg>
+                </label>
               </div>
-  
+
               <div class="form-row">
                 <span class="form-hint">Вы подписаны на нашу e-mail рассылку?</span>
-              <div class="form_second">
-                <label> 
-                 <input type="radio" name="answer" class="radio feedback_input" checked>
-                 <span class="radio_text">Да</span>
-                </label>
-                <label>
-                 <input type="radio" name="answer" class="radio feedback_input">
-                 <span class="radio_text">Нет</span>
-                </label>
+                <div class="form_second">
+                  <label>
+                    <input type="radio" name="answer" class="old-radio feedback_input" checked>
+                    <span class="custom-radio"></span>
+                      Да
+                  </label>
+                  <label>
+                    <input type="radio" name="answer" class="old-radio feedback_input">
+                    <span class="custom-radio custom-radio-second"></span>
+                      Нет
+                  </label>
+                </div>
               </div>
-              </div>
-  
+
               <div class="textarea form-row">
                 <label class="form-hint">
                   <span>Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
-                  <textarea type="field" placeholder="Может, больше рецептов?" class="feedback_input textarea">
-                  </textarea>
+                  <textarea type="field" placeholder="Может, больше рецептов?" class="feedback_input textarea"></textarea>
                 </label>
               </div>
               <button class="subscribe-button button">Отправить</button>
@@ -509,7 +512,7 @@
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 </body>
 </html>
 

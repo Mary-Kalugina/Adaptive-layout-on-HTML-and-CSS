@@ -606,6 +606,7 @@ a {
 .product {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .product_second {
@@ -1029,6 +1030,7 @@ a {
   .news {
     flex-wrap: wrap;
     border-bottom: #eeeeee 3px solid;
+    justify-content: center;
   }
 
   .news:nth-last-child(1) {
@@ -1085,6 +1087,7 @@ a {
 
   .product {
     width: 100%;
+    align-items: center;
   }
 
   .product_title {
@@ -1109,184 +1112,181 @@ a {
 
 /*popup*/
 
+.popup-fade {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.popup-fade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-fade:before {
+  content: "";
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 9999;
+}
+
+.popup {
+  min-width: 330px;
+  max-width: 390px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  position: fixed;
+  height: 600px;
+  background: #fff;
+  z-index: 99999;
+  opacity: 1;
+  top: 55px;
+}
+
+.popup__close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-indent: -9999px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  top: -35px;
+  left: 360px;
+  position: absolute;
+}
+
+.popup__close:before, .popup__close:after {
+  content: "";
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+}
+
+.popup__close:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popup__close:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.popup_container {
+  padding: 30px 25px;
+}
+
+.form-hint {
+  padding-bottom: 10px;
+}
+
+.select_lable {
+  position: relative;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  background-image: url(../svg/arrows.svg);
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+}
+
+select:focus {
+  outline-color: #e9e5d4;
+}
+
+.form-row {
+  margin-bottom: 30px;
+}
+
+.feedback_input {
+  margin-top: 10px;
+  background-color: #f4f7f6;
+  border: none;
+}
+
+.custom-radio {
+  position: relative; 
+  display: inline-block;
+  background-image: url("../svg/radio-off.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px; /* Отступ между кнопкой и меткой*/
+}
+
+.custom-radio-second {
+  margin-left: 30px;
+}
+
+.form_second {
+  display: block;
+  margin-top: 10px;
+}
+
+.old-radio {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.old-radio:checked + .custom-radio {
+  background-image: url("../svg/radio-button-on.svg");
+}
+
+.sidebar-header {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.textarea {
+  height: 130px;
+  width: 100%;
+}
+
+.textarea:focus {
+  outline-color: #e9e5d4;
+}
+
+textarea::placeholder {
+  padding: 20px;
+}
+
+.popup_text {
+  color: #000000;
+  font-size: 13px;
+  font-family: regular;
+}
+
+.subscribe-button {
+  margin-top: 30px;
+}
+
 @media (max-width: 640px) {
   .popup {
-    min-width: 330px;
-    height: 100vh;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    justify-items: center;
-    position: fixed;
-    height: 600px;
-    background: #fff;
-    z-index: 99999;
-    opacity: 1;
-    top: 55px;
     left: 15px;
     right: 15px;
-  }
-
-  .popup-fade:before {
-    content: "";
-    background: #000;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    z-index: 9999;
-  }
-
-  .popup__close {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    text-indent: -9999px;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    top: -35px;
-    left: 300px;
-    position: absolute;
-  }
-
-  .popup__close:before, .popup__close:after {
-    content: "";
-    background-color: #ffffff;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-
-  .popup__close:before {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-
-  .popup__close:after {
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-
-  .popup_container {
-    padding: 30px 25px;
-  }
-
-  .form-hint {
-    padding-bottom: 10px;
-  }
-
-  .select_lable {
-    position: relative;
-  }
-
-  .select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-
-  select {
-    width: 100%;
-    height: 50px;
-    padding: 15px;
-  }
-
-  select:focus {
-    outline-color: #e9e5d4;
-  }
-
-  svg {
-    fill: #b59f5b;
-    position: absolute;
-    top: 45px;
-    right: 5px;
-  }
-
-  .form-row {
-    margin-bottom: 30px;
-  }
-
-  .feedback_input {
-    margin-top: 10px;
-    background-color: #f4f7f6;
-    border: none;
-  }
-
-  /* Рисуем внешний круг радиокнопки*/
-  .custom-radio {
-    position: relative; 
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border: 1px solid #b59f5b;
-    border-radius: 50%;
-    vertical-align: text-top;
-    margin-right: 5px; /* Отступ между кнопкой и меткой*/
-  }
-
-  /* внутренний круг */
-  .custom-radio::before {
-    content: "";
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-color: white;
-    border-radius: 50%;
-
-    /* Выравниваем по центру относительно внешнего круга */
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0);
-  }
-
-  .form_second {
-    display: block;
-    margin-top: 10px;
-  }
-
-  .old-radio {
-    width: 0;
-    height: 0;
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-  }
-  
-  .old-radio:checked + .custom-radio::before {
-    background-color: #b59f5b;
-  }
-
-  .custom-radio-second {
-    margin-left: 30px;
-  }
-
-  .sidebar-header {
-    font-size: 16px;
-    margin-bottom: 30px;
-  }
-
-  .textarea {
-    height: 130px;
-    width: 100%;
-  }
-
-  .textarea:focus {
-    outline-color: #e9e5d4;
-  }
-
-  textarea::placeholder {
-    padding: 20px;
-  }
-
-  .popup_text {
-    color: #000000;
-    font-size: 13px;
-    font-family: regular;
-  }
-
-  .subscribe-button {
-    margin-top: 30px;
   }
 }

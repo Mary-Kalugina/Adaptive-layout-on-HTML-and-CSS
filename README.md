@@ -1,2 +1,4 @@
-<h2>Website layout for three groups of devices: desktop screens, tablets and smartphones.</h2>
-![](https://github.com/netology-code/html-2-diploma/blob/master/sources/NOEMI_Modern_ru.jpg)
+## Website layout for three groups of devices: desktop screens, tablets, and smartphones.
+
+![Website Layout](https://github.com/Mary-Kalugina/adaptive_diploma/blob/main/img/NOEMI_Modern_ru.jpg)
+
